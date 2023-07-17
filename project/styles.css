@@ -1,0 +1,122 @@
+*,*::after,*::before
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select: none;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: calc(1vh + 1vw);
+    background-color: rgb(96, 206, 169);
+}
+body p.title
+{
+    font-size: calc(2vh + .5vw);
+}
+body div.container
+{
+    position: relative;
+    height: calc(25vh + 10vw);
+    width: calc(35vh + 10vw);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: calc(.5vh + .5vw);
+    background-color: #fff;
+    border-radius: calc(1vh + 1vw);
+    box-shadow: 0 0 calc(.5vh + .25vw) 0 #000;
+}
+body div.container div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: calc(.5vh + .5vw);
+}
+body div.container div:nth-child(1)
+{
+    height: calc(4vh + 2vh);
+    width: 75%;
+    border: calc(.1vh + .1vh) solid #424242;
+    border-radius: calc(1vh + 1vw);
+    padding: calc(.25vh + .25vw);
+}
+body div.container div:nth-child(1) input[type="text"]
+{
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    font-size: calc(1vh + .5vw);
+    color: #424242;
+}
+body div.container div:nth-child(1) i
+{
+    font-size: calc(1vh + 1vw);
+    padding: calc(.1vh + .1vw);
+    border-radius: calc(1vh + 1vw);
+    border: calc(.1vh + .1vh) solid #424242;
+    cursor: pointer;
+}
+body div.container div:nth-child(1) i:hover
+{
+    background-color: #424242;
+    color: #fff;
+}
+body div.container div:nth-child(2), body div.container div:nth-child(3), body div.container div:nth-child(4), body div.container div:nth-child(5), body div.container div:nth-child(6)
+{
+    height: auto;
+    justify-content: flex-start;
+    padding-left: calc(5vh + 5vh);
+    width: 75%;
+}
+body div.container div:nth-child(2) input[type="checkbox"], body div.container div:nth-child(3) input[type="checkbox"], body div.container div:nth-child(4) input[type="checkbox"], body div.container div:nth-child(5) input[type="checkbox"]
+{
+    cursor: pointer;
+    height: calc(2vh + .5vw);
+    width: calc(2vh + .5vw);
+    border: calc(.1vh + .1vw) solid #424242;
+    outline: none;
+    border-radius: calc(.1vh + .1vw);
+    accent-color: #4eeef3;
+}
+body div.container div:nth-child(2) label, body div.container div:nth-child(3) label, body div.container div:nth-child(4) label, body div.container div:nth-child(5) label, body div.container div:nth-child(6) label
+{
+    font-size: calc(.5vh + .5vw);
+    font-weight: 700;
+}
+body div.container div:nth-child(6) input[type="number"]
+{
+    height: calc(2vh + .5vw);
+    width: calc(4vh + 1vw);
+    text-align: center;
+    border: calc(.1vh + .1vw) solid #424242;
+    border-radius: calc(.1vh + .1vw);
+}
+body div.container div:nth-child(7)
+{
+    height: calc(4vh + 2vw);
+    width: 75%;
+    background-color: #4eeef3;
+    border-radius: calc(1vh + 1vw);
+    transition: background-color .1s;
+    cursor: pointer;
+}
+body div.container div:nth-child(7):hover
+{
+    background-color: #43d1d6;
+}
+body div.container div:nth-child(7) p
+{
+    font-size: calc(2vh + .25vw);
+}
